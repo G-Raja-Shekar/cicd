@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        nodejs 'Node JS'  // Referencing the NodeJS tool name from the configuration
+    }
 
     environment {
         DOCKER_IMAGE = 'rajadocker9/jenkins-application'
